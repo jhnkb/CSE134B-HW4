@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John's Webpage - Projects</title>
+    <link rel="icon" type="image/png" href="images/logo.svg">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/variables.css">
+    <link rel="stylesheet" href="style/projects.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main Navigation">
+            <ul class="desktop-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="meetjune.html">Meet June!</a> </li>
+            </ul>
+
+            <details class="mobile-nav">
+                <summary>☰ Menu </summary>
+
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="meetjune.html">Meet June!</a> </li>
+            </ul>
+            </details>
+        </nav>
+    </header>
+
+    <main>
+        <h1>projects</h1>
+
+        <noscript>
+            <p>
+                JavaScript is disabled. Interactive project filtering
+                will require JavaScript, but all projects are available
+                to browse below.
+            </p>
+        </noscript>
+
+        <p class="project-filters">
+            <button type="button">Bioinformatics</button>
+            <button type="button">Personal</button>
+            <button type="button">All</button>
+        </p>
+
+
+        <section aria-label="Project Gallery">
+
+            <project-card>
+                <article class="bioinformatics">
+                    <figure>
+                    <img src="images/hif3a.webp" alt="Hif3a project">
+                        <figcaption>
+                            Illustrative overview of the Hif3a project.
+                            Charts do not represent actual experimental data.
+                        </figcaption>
+                    </figure>
+                    <h2>Hif3a Isoform Analysis</h2>
+
+                    <p>
+                        Investigating Hif3a transcript isoforms during
+                        erythroid differentiation using single-cell RNA-seq.
+                    </p>
+                    <a href="projects/hif3a.html">View Project</a>
+                </article>
+            </project-card>
+
+            <project-card>
+                <article class="bioinformatics">
+                    <figure>
+                    <img src="images/socs1.png" alt="Socs1 analysis">
+                        <figcaption>
+                            Illustrative overview of the Socs1 expression project.
+                            Charts do not represent actual experimental data.
+                        </figcaption>
+                    </figure>                    
+
+                    <h2>Socs1 Expression Analysis</h2>
+                    <p>
+                        Analyzing gene expression and chromatin accessibility
+                        in Dex-treated and untreated cells using
+                        single-cell RNA-seq and ATAC-seq.
+                    </p>
+                    <a href="projects/socs1.html">View Project</a>
+                </article>
+            </project-card>
+
+            <project-card>
+                <article class="personal">
+                    <figure>
+                    <img src="images/watchtower.png" alt="WatchTower project">
+                        <figcaption>
+                            Illustrative overview of the WatchTower project.
+                            Charts do not represent actual application.
+                        </figcaption>
+                    </figure>                      
+
+                    <h2>WatchTower</h2>                
+                    <p>
+                        A team-developed web application for monitoring
+                        website performance through an interactive dashboard.
+                    </p>
+                    <a href="projects/watchtower.html">View Project</a>
+                </article>
+            </project-card>
+        </section>
+    </main>
+
+    <footer>
+    <p>&copy; 2026 john bolibol</p>
+    <nav aria-label="Social Media">
+        <a href="https://x.com">X</a>
+        <a href="https://linkedin.com">LinkedIn</a>
+        <a href="https://github.com">GitHub</a>
+    </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* John Bolibol
+https://github.com/jhnkb/CSE134B-HW3.git
+
+https://coolors.co/dab6c4-7b886f-b4dc7f-feffa5-ffa0ac*/
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color: #7B886F;
+
+    max-width: 600px;
+    margin: auto;
+    padding: 5rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.latin {
+    font-style: italic;
+}
+
+#warning {
+    background-color: #feffa5;
+}
+
+blockquote {
+    border: 2px solid #DAB6C4;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+a:hover {
+    color:aqua;
+}
+
+a:focus, input:focus, button:focus {
+    outline: 2px solid pink;
+    outline-offset: 4px;
+    border-radius: 24px;
+}
+
+p {
+    color: green;
+}
+p {
+    color: olive;
+}
+
+/*The later value wins because executes the commands from the top to bottom.
+Since both selectors are changing the same property, the second color declaration
+overrides the first one*/
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John's Webpage - Homepage</title>
+    <link rel="icon" type="image/png" href="images/logo.svg">
+    <link rel="stylesheet" href="style/variables.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/home.css">
+</head>
+
+<body>
+    <main>
+        <img class="logo" src="images/logo.svg" alt="Cartoon illustration of June, my dog">
+        <h1>hi, i'm john</h1>
+        <p id="description">cs student &bull; bioinformatics &bull; dog enthusiast </p>
+        <nav id="homepage-navigation" aria-label="Homepage Navigation">
+            <ul>
+                <li><a href="about.html">about</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="journal.html">journal</a></li>
+                <li><a href="resume.html">resume</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li class="meetjune"><a href="meetjune.html">Meet June!</a></li>
+            </ul>
+        </nav>
+
+        <hello-world></hello-world>
+
+    </main>
+
+    <footer>
+    <p>&copy; 2026 john bolibol</p>
+    <nav aria-label="Social Media">
+        <a href="https://x.com">X</a>
+        <a href="https://linkedin.com">LinkedIn</a>
+        <a href="https://github.com">GitHub</a>
+    </nav>
+    </footer>
+
+    <script>
+        class HelloWorld extends HTMLElement {
+            connectedCallback() {
+                console.log("Hello World!");
+            }
+        }
+
+        customElements.define("hello-world", HelloWorld);
+    </script>
+</body>
+</html>

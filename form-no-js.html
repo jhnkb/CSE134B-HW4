@@ -49,21 +49,36 @@
         <img src="images/map-pin.svg" alt="Location icon" class="contact-icon">
         <span class="location">san diego, ca</span>
 
+        <hr>
+
         <form id="contact" action="https://httpbin.org/post" method="post">
                 <h2>send me a message!</h2>
                 <p>Found a bug? Have a question? Or just want to say hello? Drop me a message!</p>
 
-                <label for="name">name:</label>
-                <input type="text" id="name" name="name" autocomplete="name" required>
+                <label for="name">name [required]:</label>
+                <p id="name-help">Enter your name (1–100 characters).</p>
+                <input type="text" id="name" name="name" autocomplete="name" minlength="1" maxlength="100" aria-describedby="name-help" required>
 
-                <label for="email">e-mail:</label>
-                <input type="email" id="email" name="email" autocomplete="email" required>
+                <label for="email">e-mail [required]:</label>
+                <p id="email-help">Enter a valid email address so I can get back to you!</p>
+                <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-help" required>
 
                 <label for="phone">phone number [optional]:</label>
-                <input type="tel" id="phone" name="phone" autocomplete="tel">
+                <p id="phone-help">Enter 7–20 characters using numbers, spaces,
+                    parentheses, or hyphens. A leading + is also allowed.</p>
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    autocomplete="tel" 
+                    pattern="[+]?[0-9() .-]{7,20}"
+                    title="Enter a phone number in the format 123-456-7890"
+                    aria-describedby="phone-help"
+                    >
 
-                <label for="comments">comments:</label>
-                <textarea id="comments" name="comments"></textarea>
+                <label for="comments">comments [required]:</label>
+                <p id="comments-help">What's on your mind? Write at least 10 characters (max 1,000).</p>
+                <textarea id="comments" name="comments" minlength="10" maxlength="1000" aria-describedby="comments-help" required></textarea>
 
                 <input type="hidden" name="possible_bot" value="true">
 

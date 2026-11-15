@@ -35,3 +35,12 @@ form button:focus-visible {
     outline: 2px solid var(--color-primary);
     outline-offset: 2px;
 }
+
+form h2 {
+    margin-bottom: 0;
+}
+
+form p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}

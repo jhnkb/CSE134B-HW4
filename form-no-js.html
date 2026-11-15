@@ -18,7 +18,7 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="journal.html">Journal</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form-no-js.html">Contact</a></li>
                 <li><a href="meetjune.html">Meet June!</a> </li>
             </ul>
 
@@ -31,7 +31,7 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="journal.html">Journal</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form-no-js.html">Contact</a></li>
                 <li><a href="meetjune.html">Meet June!</a> </li>
             </ul>
             </details>
@@ -49,23 +49,23 @@
         <img src="images/map-pin.svg" alt="Location icon" class="contact-icon">
         <span class="location">San Diego, CA</span>
 
-        <form id="contact" action="#" method="post">
-            <fieldset>
-                <legend>Send me a message!</legend>
-                <label for="name">name:</label>
+        <form id="contact" action="https://httpbin.org/post" method="post">
+                <h2>Send me a message!</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
 
-                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
 
-                <label for="email">email</label>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
 
-                <input type="email" id="email" name="email" required>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
 
-                <label for="message">message</label>
-
-                <textarea id="message" name="message" rows="5" cols="40"></textarea>
+                <input type="hidden" name="possible_bot" value="true">
 
                 <button type="submit">submit</button>
-            </fieldset>
         </form>
     </main>
 

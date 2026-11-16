@@ -55,33 +55,61 @@
 
         <hr>
 
+        
         <form id="contact" action="https://httpbin.org/post" method="post">
-                <h2>send me a message!</h2>
-                <p>Found a bug? Have a question? Or just want to say hello? Drop me a message!</p>
+            <h2>send me a message!</h2>
+            <p>found a bug? have a question? or just want to say hello? drop me a message!</p>
 
-                <label for="name">name [required]:</label>
-                <p id="name-help">Enter your name (1–100 characters).</p>
-                <input type="text" id="name" name="name" autocomplete="name" minlength="1" maxlength="100" aria-describedby="name-help name-error" required>
-                <p id="name-error"></p>
+            <label for="name">name [required]:</label>
+            <p id="name-help">Enter your name (1–100 characters).</p>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                minlength="1"
+                maxlength="100"
+                aria-describedby="name-help error-message"
+                required
+            >
 
-                <label for="email">e-mail [required]:</label>
-                <p id="email-help">Enter a valid email address so I can get back to you!</p>
-                <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-help email-error" required>
-                <p id="email-error"></p>
+            <label for="email">e-mail [required]:</label>
+            <p id="email-help">Enter a valid email address so I can get back to you!</p>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                aria-describedby="email-help email-error"
+                required
+            >
 
-                <label for="comments">comments [required]:</label>
-                <p id="comments-help">What's on your mind? Write at least 10 characters (max 1,000).</p>
-                <textarea id="comments" name="comments" minlength="10" maxlength="1000" aria-describedby="comments-help comments-error" required></textarea>
-                <p id="comments-error"></p>
+            <label for="comments">comments [required]:</label>
+            <p id="comments-help">What's on your mind? Write at least 10 characters (max 1,000).</p>
+            <textarea
+                id="comments"
+                name="comments"
+                minlength="10"
+                maxlength="1000"
+                aria-describedby="comments-help comments-error form-info"
+                required
+            ></textarea>
 
-                <section id="error-message" aria-live="polite" aria-label="Form errors"></section>
+            <section id="form-info"
+                aria-label="Message information"
+                hidden></section>
 
-                <section id="form-info" aria-live="polite" aria-label="Message information"></section>
+            <section id="error-message"
+                    aria-label="Form errors"
+                    aria-live="polite"></section>
 
-                <input type="hidden" name="possible_bot" value="true">
+            <input type="hidden" name="form-errors" id="form-errors" value="[]">
 
-                <button type="submit">submit</button>
+            <input type="hidden" name="possible_bot" value="true">
+
+            <button type="submit">submit</button>
         </form>
+
     </main>
 
     <footer>

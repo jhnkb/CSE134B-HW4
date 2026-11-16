@@ -81,7 +81,7 @@ nav[aria-label="Main Navigation"] a{
     background-color: var(--color-secondary);
     border-radius: var(--radius-small);
     text-decoration: none;
-    color: black;
+    color: var(--color-text);
     line-height: 2.5;
     gap: 0.625%;
 }
@@ -172,4 +172,34 @@ input:focus,
 textarea:focus {
     outline: 3px solid var(--color-primary);
     outline-offset: 3px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+#theme-toggle {
+    align-self: flex-end;
+    margin: 0.5rem 1rem;
+}
+
+#theme-toggle {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-small);
+    padding: var(--spacing-small) var(--spacing-medium);
+    font: inherit;
+    cursor: pointer;
+}
+
+#theme-toggle[hidden] {
+    display: none;
+}
+
+form input,
+form textarea {
+    background-color: var(--color-background);
+    color: var(--color-text);
 }

@@ -32,4 +32,5 @@ dialog[open] {
     border-radius: var(--radius-small);
     background-color: var(--color-secondary);
     text-align: center;
+    color: var(--color-text);
 }

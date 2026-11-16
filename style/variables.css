@@ -25,3 +25,13 @@
     --radius-small: 0.5rem;
     --radius-large: 1rem;
 }
+
+    /* Dark Theme */
+    :root[data-theme="dark"] {
+    --color-primary: #E99558;
+    --color-secondary: #38312D;
+    --color-text: #F5EDE5;
+    --color-background: #211E1B;
+    --color-border: #62564D;
+    --color-hover: #647A5D;
+}

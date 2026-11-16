@@ -50,14 +50,16 @@ form :required {
     border: 2px solid var(--color-border);
 }
 
-form :user-invalid {
-    border-color: #b42318;
-    background-color: #fff0f0;
-}
-
 form :user-valid {
     border-color: #287a43;
     background-color: #f0fff4;
+    color: #333333;
+}
+
+form :user-invalid {
+    border-color: #b42318;
+    background-color: #fff0f0;
+    color: #333333;
 }
 
 form :focus-visible {

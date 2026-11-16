@@ -36,14 +36,14 @@ nav[aria-label="Homepage Navigation"] a{
     background-color: var(--color-secondary);
     border-radius: var(--radius-small);
     text-decoration: none;
-    color: black;
+    color: var(--color-text);
     line-height: 2.5;
     gap: 0.625%;
 }
 
 nav[aria-label="Homepage Navigation"] a:hover{
     background: var(--color-hover);
-    color: white;
+    color: var(--color-text);
     transform: scale(1.5);
 }
 
@@ -54,3 +54,8 @@ nav[aria-label="Homepage Navigation"] a:hover{
     margin: 0 auto;
 }
 
+#theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
